@@ -24,16 +24,16 @@ function NotFoundComponent() {
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
+        <h2 className="mt-4 text-xl font-semibold text-foreground">Page non trouvée</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
+          La page que vous cherchez n'existe pas ou a été déplacée.
         </p>
         <div className="mt-6">
           <Link
             to="/"
             className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            Go home
+            Retour à l'accueil
           </Link>
         </div>
       </div>
@@ -49,10 +49,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="text-xl font-semibold tracking-tight text-foreground">
-          This page didn't load
+          Impossible de charger la page
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          Something went wrong on our end. You can try refreshing or head back home.
+          Une erreur est survenue. Veuillez réessayer ou retourner à l'accueil.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
@@ -62,13 +62,13 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
             }}
             className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            Try again
+            Réessayer
           </button>
           <a
             href="/"
             className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
           >
-            Go home
+            Retour à l'accueil
           </a>
         </div>
       </div>
@@ -76,33 +76,81 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const jsonLdSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "DigiCab",
+      "alternateName": "DigiCab Maroc",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web, iOS, Android, Windows, macOS",
+      "url": "https://digicab.ma",
+      "description": "DigiCab est la plateforme N°1 au Maroc pour la gestion de cabinets médicaux et dentaires: dossiers patients, agenda intelligent, ordonnances PDF, consultations, facturation et statistiques.",
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "MAD"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "DigiCab",
+      "url": "https://digicab.ma",
+      "logo": "https://digicab.ma/logo.png",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+212639286401",
+        "contactType": "sales",
+        "areaServed": "MA",
+        "availableLanguage": ["French", "Arabic", "English"]
+      }
+    }
+  ]
+};
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "DigiCab — La gestion de votre cabinet médical, enfin simple." },
+      { title: "DigiCab — Logiciel de Gestion de Cabinet Médical au Maroc" },
       {
         name: "description",
         content:
-          "DigiCab centralise patients, rendez-vous, consultations, ordonnances, paiements et statistiques pour les médecins, dentistes et cabinets médicaux.",
+          "DigiCab est le logiciel N°1 au Maroc pour la gestion intégrée des cabinets médicaux et dentaires: gestion des patients, agenda intelligent, ordonnances PDF, consultations et facturation.",
+      },
+      {
+        name: "keywords",
+        content:
+          "DigiCab, DigiCab Maroc, logiciel cabinet médical Maroc, gestion cabinet dentaire, logiciel médecin Maroc, dossier patient électronique, ordonnance médicale PDF, agenda médical Casablanca, gestion consultation médicale",
       },
       { name: "author", content: "DigiCab" },
-      { property: "og:title", content: "DigiCab — La gestion de votre cabinet médical, enfin simple." },
+      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+      { name: "theme-color", content: "#4f46e5" },
+
+      /* Open Graph / Facebook */
+      { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "DigiCab" },
+      { property: "og:title", content: "DigiCab — Logiciel de Gestion de Cabinet Médical au Maroc" },
       {
         property: "og:description",
         content:
-          "DigiCab centralise patients, rendez-vous, consultations, ordonnances, paiements et statistiques pour les médecins, dentistes et cabinets médicaux.",
+          "Centralisez vos patients, rendez-vous, consultations, ordonnances et paiements avec DigiCab. Essai gratuit disponible.",
       },
-      { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://digicab.ma/logo.png" },
+
+      /* Twitter */
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@DigiCab" },
-      { name: "twitter:title", content: "DigiCab — La gestion de votre cabinet médical, enfin simple." },
-      { name: "twitter:description", content: "DigiCab centralise patients, rendez-vous, consultations, ordonnances, paiements et statistiques pour les médecins, dentistes et cabinets médicaux." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3ef1a10a-101b-4b80-bf06-281cca34fb28" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3ef1a10a-101b-4b80-bf06-281cca34fb28" },
+      { name: "twitter:title", content: "DigiCab — Logiciel de Gestion de Cabinet Médical au Maroc" },
+      { name: "twitter:description", content: "Centralisez vos patients, rendez-vous, consultations et ordonnances avec DigiCab. Essai gratuit disponible." },
+      { name: "twitter:image", content: "https://digicab.ma/logo.png" },
     ],
     links: [
+      { rel: "canonical", href: "https://digicab.ma/" },
+      { rel: "icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
         href: appCss,
@@ -123,9 +171,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
+        />
       </head>
       <body>
         {children}
@@ -143,7 +195,6 @@ function RootComponent() {
       <ThemeProvider>
         <I18nProvider>
           <TrialModalProvider>
-            {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
             <Outlet />
             <TrialModal />
             <WhatsAppFloat />
