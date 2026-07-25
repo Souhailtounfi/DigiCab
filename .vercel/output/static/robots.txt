@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://digicab.ma/sitemap.xml
+Sitemap: https://digicab.vercel.app/sitemap.xml

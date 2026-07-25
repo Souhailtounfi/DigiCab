@@ -1,0 +1,1056 @@
+import { o as __toESM } from "../_runtime.mjs";
+import { u as require_react } from "../_libs/@floating-ui/react-dom+[...].mjs";
+import { h as Slot, v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
+import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs";
+import { t as twMerge } from "../_libs/tailwind-merge.mjs";
+import { t as Root } from "../_libs/radix-ui__react-label.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/textarea-AbT1Lx8u.js
+var import_react = /* @__PURE__ */ __toESM(require_react());
+var import_jsx_runtime = require_jsx_runtime();
+var LOCALES = [
+	{
+		code: "fr",
+		label: "Français",
+		flag: "🇫🇷",
+		dir: "ltr"
+	},
+	{
+		code: "en",
+		label: "English",
+		flag: "🇬🇧",
+		dir: "ltr"
+	},
+	{
+		code: "ar",
+		label: "العربية",
+		flag: "🇲🇦",
+		dir: "rtl"
+	}
+];
+var translations = {
+	fr: {
+		"nav.home": "Accueil",
+		"nav.features": "Fonctionnalités",
+		"nav.solutions": "Solutions",
+		"nav.pricing": "Tarifs",
+		"nav.testimonials": "Témoignages",
+		"nav.faq": "FAQ",
+		"nav.contact": "Contact",
+		"cta.demo": "Demander une démonstration",
+		"cta.trial": "Commencer un essai gratuit",
+		"cta.whatsapp": "Nous contacter sur WhatsApp",
+		"cta.contact": "Nous contacter",
+		"hero.badge": "Conforme RGPD · Hébergement Maroc",
+		"hero.title": "La gestion de votre cabinet médical, enfin simple.",
+		"hero.subtitle": "DigiCab centralise vos patients, rendez-vous, consultations, ordonnances, paiements, historique médical, personnel et statistiques — dans une plateforme moderne, rapide et sécurisée.",
+		"hero.stat1": "cabinets équipés",
+		"hero.stat2": "rendez-vous par mois",
+		"hero.stat3": "de disponibilité",
+		"trust.title": "Déjà adopté par des professionnels de santé.",
+		"trust.subtitle": "Médecins, dentistes, cliniques privées et centres médicaux nous font confiance au quotidien.",
+		"features.eyebrow": "Fonctionnalités",
+		"features.title": "Tout ce dont votre cabinet a besoin, au même endroit.",
+		"features.subtitle": "Une suite complète pensée pour les professionnels de santé exigeants.",
+		"why.eyebrow": "Pourquoi DigiCab",
+		"why.title": "Une plateforme qui change le quotidien de votre équipe.",
+		"workflow.eyebrow": "Workflow",
+		"workflow.title": "Un parcours patient fluide, de A à Z.",
+		"workflow.subtitle": "De la prise de rendez-vous au dossier archivé — tout est connecté.",
+		"pricing.eyebrow": "Tarifs",
+		"pricing.title": "Un tarif transparent, adapté à votre cabinet.",
+		"pricing.subtitle": "Sans engagement. Annulez à tout moment. TVA incluse.",
+		"pricing.monthly": "MAD/mois",
+		"pricing.custom": "Sur devis",
+		"pricing.popular": "Le plus populaire",
+		"pricing.starter": "Starter",
+		"pricing.starterDesc": "Idéal pour un praticien indépendant qui démarre.",
+		"pricing.pro": "Professionnel",
+		"pricing.proDesc": "Pour les cabinets qui veulent gagner du temps chaque jour.",
+		"pricing.enterprise": "Entreprise",
+		"pricing.enterpriseDesc": "Cliniques, centres médicaux et groupes multi-sites.",
+		"screens.eyebrow": "Aperçu",
+		"screens.title": "Une expérience pensée dans le moindre détail.",
+		"testimonials.eyebrow": "Témoignages",
+		"testimonials.title": "Ils ont transformé leur pratique avec DigiCab.",
+		"faq.eyebrow": "FAQ",
+		"faq.title": "Vos questions, nos réponses.",
+		"contact.eyebrow": "Contact",
+		"contact.title": "Parlons de votre cabinet.",
+		"contact.subtitle": "Notre équipe vous répond en moins de 24h.",
+		"contact.hours": "Lun – Sam · 9h – 19h",
+		"contact.address": "Casablanca, Maroc",
+		"contact.send": "Envoyer le message",
+		"form.firstName": "Prénom",
+		"form.lastName": "Nom",
+		"form.clinic": "Cabinet",
+		"form.specialty": "Spécialité",
+		"form.phone": "Téléphone",
+		"form.email": "Email",
+		"form.city": "Ville",
+		"form.practitioners": "Nombre de praticiens",
+		"form.message": "Message",
+		"form.submit": "Envoyer la demande",
+		"form.orWhatsapp": "Ou contactez-nous directement sur WhatsApp",
+		"form.trialTitle": "Commencer votre essai gratuit",
+		"form.trialSubtitle": "Remplissez ce formulaire — notre équipe vous contacte sous 24h pour activer votre accès.",
+		"footer.product": "Produit",
+		"footer.support": "Support",
+		"footer.company": "Entreprise",
+		"footer.legal": "Légal",
+		"footer.features": "Fonctionnalités",
+		"footer.pricing": "Tarifs",
+		"footer.privacy": "Confidentialité",
+		"footer.terms": "Conditions",
+		"footer.contact": "Contact",
+		"footer.about": "À propos",
+		"footer.rights": "Tous droits réservés.",
+		"footer.tagline": "La plateforme moderne pour cabinets médicaux.",
+		"cookies.text": "Nous utilisons des cookies pour améliorer votre expérience. En continuant, vous acceptez notre politique.",
+		"cookies.accept": "Accepter",
+		"cookies.decline": "Refuser",
+		"theme.light": "Clair",
+		"theme.dark": "Sombre",
+		"backToTop": "Retour en haut"
+	},
+	en: {
+		"nav.home": "Home",
+		"nav.features": "Features",
+		"nav.solutions": "Solutions",
+		"nav.pricing": "Pricing",
+		"nav.testimonials": "Testimonials",
+		"nav.faq": "FAQ",
+		"nav.contact": "Contact",
+		"cta.demo": "Request a demo",
+		"cta.trial": "Start free trial",
+		"cta.whatsapp": "Contact us on WhatsApp",
+		"cta.contact": "Contact us",
+		"hero.badge": "GDPR compliant · Hosted in Morocco",
+		"hero.title": "Medical practice management, finally simple.",
+		"hero.subtitle": "DigiCab centralizes your patients, appointments, consultations, prescriptions, payments, medical history, staff and analytics — in a modern, fast and secure platform.",
+		"hero.stat1": "clinics equipped",
+		"hero.stat2": "appointments per month",
+		"hero.stat3": "uptime",
+		"trust.title": "Already trusted by healthcare professionals.",
+		"trust.subtitle": "Doctors, dentists, private clinics and medical centers rely on us every day.",
+		"features.eyebrow": "Features",
+		"features.title": "Everything your practice needs, in one place.",
+		"features.subtitle": "A complete suite built for demanding healthcare professionals.",
+		"why.eyebrow": "Why DigiCab",
+		"why.title": "A platform that changes your team's daily life.",
+		"workflow.eyebrow": "Workflow",
+		"workflow.title": "A seamless patient journey, from start to finish.",
+		"workflow.subtitle": "From booking to archived record — everything is connected.",
+		"pricing.eyebrow": "Pricing",
+		"pricing.title": "Transparent pricing, tailored to your practice.",
+		"pricing.subtitle": "No commitment. Cancel anytime. Taxes included.",
+		"pricing.monthly": "MAD/month",
+		"pricing.custom": "Custom quote",
+		"pricing.popular": "Most popular",
+		"pricing.starter": "Starter",
+		"pricing.starterDesc": "Perfect for a solo practitioner getting started.",
+		"pricing.pro": "Professional",
+		"pricing.proDesc": "For clinics that want to save time every day.",
+		"pricing.enterprise": "Enterprise",
+		"pricing.enterpriseDesc": "Clinics, medical centers and multi-site groups.",
+		"screens.eyebrow": "Preview",
+		"screens.title": "An experience crafted down to the smallest detail.",
+		"testimonials.eyebrow": "Testimonials",
+		"testimonials.title": "They transformed their practice with DigiCab.",
+		"faq.eyebrow": "FAQ",
+		"faq.title": "Your questions, our answers.",
+		"contact.eyebrow": "Contact",
+		"contact.title": "Let's talk about your practice.",
+		"contact.subtitle": "Our team replies within 24 hours.",
+		"contact.hours": "Mon – Sat · 9am – 7pm",
+		"contact.address": "Casablanca, Morocco",
+		"contact.send": "Send message",
+		"form.firstName": "First name",
+		"form.lastName": "Last name",
+		"form.clinic": "Clinic",
+		"form.specialty": "Specialty",
+		"form.phone": "Phone",
+		"form.email": "Email",
+		"form.city": "City",
+		"form.practitioners": "Number of practitioners",
+		"form.message": "Message",
+		"form.submit": "Send request",
+		"form.orWhatsapp": "Or contact us directly on WhatsApp",
+		"form.trialTitle": "Start your free trial",
+		"form.trialSubtitle": "Fill in this form — our team will contact you within 24h to activate your access.",
+		"footer.product": "Product",
+		"footer.support": "Support",
+		"footer.company": "Company",
+		"footer.legal": "Legal",
+		"footer.features": "Features",
+		"footer.pricing": "Pricing",
+		"footer.privacy": "Privacy",
+		"footer.terms": "Terms",
+		"footer.contact": "Contact",
+		"footer.about": "About",
+		"footer.rights": "All rights reserved.",
+		"footer.tagline": "The modern platform for medical practices.",
+		"cookies.text": "We use cookies to improve your experience. By continuing you accept our policy.",
+		"cookies.accept": "Accept",
+		"cookies.decline": "Decline",
+		"theme.light": "Light",
+		"theme.dark": "Dark",
+		"backToTop": "Back to top"
+	},
+	ar: {
+		"nav.home": "الرئيسية",
+		"nav.features": "الميزات",
+		"nav.solutions": "الحلول",
+		"nav.pricing": "الأسعار",
+		"nav.testimonials": "الشهادات",
+		"nav.faq": "الأسئلة",
+		"nav.contact": "اتصل بنا",
+		"cta.demo": "اطلب عرضًا توضيحيًا",
+		"cta.trial": "ابدأ التجربة المجانية",
+		"cta.whatsapp": "تواصل عبر واتساب",
+		"cta.contact": "تواصل معنا",
+		"hero.badge": "متوافق مع RGPD · مستضاف في المغرب",
+		"hero.title": "إدارة عيادتك الطبية، أصبحت أخيرًا بسيطة.",
+		"hero.subtitle": "يجمع DigiCab مرضاك، مواعيدك، استشاراتك، وصفاتك، مدفوعاتك، سجلاتك الطبية، فريقك وإحصائياتك في منصة حديثة وسريعة وآمنة.",
+		"hero.stat1": "عيادة مجهزة",
+		"hero.stat2": "موعد شهريًا",
+		"hero.stat3": "من الجاهزية",
+		"trust.title": "يثق بنا محترفو الرعاية الصحية بالفعل.",
+		"trust.subtitle": "أطباء، أطباء أسنان، وعيادات خاصة يعتمدون علينا يوميًا.",
+		"features.eyebrow": "الميزات",
+		"features.title": "كل ما تحتاجه عيادتك، في مكان واحد.",
+		"features.subtitle": "مجموعة متكاملة مصممة لمحترفي الصحة المتطلبين.",
+		"why.eyebrow": "لماذا DigiCab",
+		"why.title": "منصة تُغيّر يوميات فريقك.",
+		"workflow.eyebrow": "المسار",
+		"workflow.title": "مسار مريض سلس من البداية إلى النهاية.",
+		"workflow.subtitle": "من حجز الموعد إلى الملف المؤرشف — كل شيء متصل.",
+		"pricing.eyebrow": "الأسعار",
+		"pricing.title": "أسعار شفافة تناسب عيادتك.",
+		"pricing.subtitle": "بدون التزام. إلغاء في أي وقت. الضرائب مشمولة.",
+		"pricing.monthly": "درهم/شهر",
+		"pricing.custom": "عرض مخصص",
+		"pricing.popular": "الأكثر شعبية",
+		"pricing.starter": "المبتدئ",
+		"pricing.starterDesc": "مثالي للطبيب المستقل الذي يبدأ نشاطه.",
+		"pricing.pro": "احترافي",
+		"pricing.proDesc": "للعيادات التي تريد ربح الوقت كل يوم.",
+		"pricing.enterprise": "مؤسسة",
+		"pricing.enterpriseDesc": "عيادات ومراكز طبية ومجموعات متعددة المواقع.",
+		"screens.eyebrow": "لمحة",
+		"screens.title": "تجربة مصممة بعناية في أدق التفاصيل.",
+		"testimonials.eyebrow": "الشهادات",
+		"testimonials.title": "لقد غيّروا ممارستهم مع DigiCab.",
+		"faq.eyebrow": "الأسئلة الشائعة",
+		"faq.title": "أسئلتكم، إجاباتنا.",
+		"contact.eyebrow": "اتصل بنا",
+		"contact.title": "لنتحدث عن عيادتك.",
+		"contact.subtitle": "يرد فريقنا خلال أقل من 24 ساعة.",
+		"contact.hours": "الإثنين – السبت · 9 صباحًا – 7 مساءً",
+		"contact.address": "الدار البيضاء، المغرب",
+		"contact.send": "إرسال الرسالة",
+		"form.firstName": "الاسم",
+		"form.lastName": "اللقب",
+		"form.clinic": "العيادة",
+		"form.specialty": "التخصص",
+		"form.phone": "الهاتف",
+		"form.email": "البريد الإلكتروني",
+		"form.city": "المدينة",
+		"form.practitioners": "عدد الأطباء",
+		"form.message": "الرسالة",
+		"form.submit": "إرسال الطلب",
+		"form.orWhatsapp": "أو تواصل معنا مباشرة عبر واتساب",
+		"form.trialTitle": "ابدأ تجربتك المجانية",
+		"form.trialSubtitle": "املأ هذا النموذج — سيتصل بك فريقنا خلال 24 ساعة لتفعيل حسابك.",
+		"footer.product": "المنتج",
+		"footer.support": "الدعم",
+		"footer.company": "الشركة",
+		"footer.legal": "قانوني",
+		"footer.features": "الميزات",
+		"footer.pricing": "الأسعار",
+		"footer.privacy": "الخصوصية",
+		"footer.terms": "الشروط",
+		"footer.contact": "اتصل بنا",
+		"footer.about": "من نحن",
+		"footer.rights": "جميع الحقوق محفوظة.",
+		"footer.tagline": "المنصة الحديثة للعيادات الطبية.",
+		"cookies.text": "نستخدم ملفات تعريف الارتباط لتحسين تجربتك. بالاستمرار فأنت توافق على سياستنا.",
+		"cookies.accept": "قبول",
+		"cookies.decline": "رفض",
+		"theme.light": "فاتح",
+		"theme.dark": "داكن",
+		"backToTop": "العودة للأعلى"
+	}
+};
+var FEATURES_KEYS = [
+	"patients",
+	"booking",
+	"calendar",
+	"history",
+	"consult",
+	"prescriptions",
+	"treatments",
+	"payments",
+	"unpaid",
+	"secretaries",
+	"doctors",
+	"dashboard",
+	"stats",
+	"search",
+	"pdf",
+	"backups",
+	"security",
+	"darkmode",
+	"audit",
+	"notifications",
+	"emails",
+	"sms"
+];
+var FEATURES_I18N = {
+	fr: {
+		patients: {
+			t: "Gestion des patients",
+			d: "Fiches détaillées, recherche instantanée, historique complet."
+		},
+		booking: {
+			t: "Prise de rendez-vous",
+			d: "Réservation en ligne, rappels automatiques, zéro friction."
+		},
+		calendar: {
+			t: "Agenda intelligent",
+			d: "Vue jour, semaine, mois. Multi-praticiens, glisser-déposer."
+		},
+		history: {
+			t: "Historique médical",
+			d: "Tout le dossier patient, toujours à portée de clic."
+		},
+		consult: {
+			t: "Consultations",
+			d: "Prise de notes structurée, modèles personnalisables."
+		},
+		prescriptions: {
+			t: "Ordonnances",
+			d: "Génération en un clic, PDF prêt à imprimer."
+		},
+		treatments: {
+			t: "Suivi des traitements",
+			d: "Plans de traitement, étapes, rappels."
+		},
+		payments: {
+			t: "Paiements",
+			d: "Facturation, encaissements, reçus automatiques."
+		},
+		unpaid: {
+			t: "Suivi des impayés",
+			d: "Alertes, relances, tableau clair par patient."
+		},
+		secretaries: {
+			t: "Gestion des secrétaires",
+			d: "Rôles, permissions, accès sécurisés."
+		},
+		doctors: {
+			t: "Gestion des médecins",
+			d: "Plusieurs praticiens, agendas séparés."
+		},
+		dashboard: {
+			t: "Tableau de bord",
+			d: "Vision temps réel de votre activité."
+		},
+		stats: {
+			t: "Statistiques",
+			d: "Graphiques clairs, indicateurs clés."
+		},
+		search: {
+			t: "Recherche rapide",
+			d: "Trouvez un patient en 2 secondes."
+		},
+		pdf: {
+			t: "Export PDF",
+			d: "Ordonnances, factures, dossiers exportables."
+		},
+		backups: {
+			t: "Sauvegardes automatiques",
+			d: "Vos données protégées, tous les jours."
+		},
+		security: {
+			t: "Connexion sécurisée",
+			d: "Chiffrement, 2FA, conformité RGPD."
+		},
+		darkmode: {
+			t: "Mode sombre",
+			d: "Confort visuel jour et nuit."
+		},
+		audit: {
+			t: "Historique complet",
+			d: "Journal d'activité par utilisateur."
+		},
+		notifications: {
+			t: "Notifications",
+			d: "Alertes en temps réel, jamais un oubli."
+		},
+		emails: {
+			t: "Emails automatiques",
+			d: "Confirmations, rappels, campagnes."
+		},
+		sms: {
+			t: "Prêt pour les SMS",
+			d: "Intégration SMS disponible sur demande."
+		}
+	},
+	en: {
+		patients: {
+			t: "Patient management",
+			d: "Detailed records, instant search, full history."
+		},
+		booking: {
+			t: "Online booking",
+			d: "Self-service booking, automatic reminders, zero friction."
+		},
+		calendar: {
+			t: "Smart calendar",
+			d: "Day, week, month views. Multi-practitioner, drag & drop."
+		},
+		history: {
+			t: "Medical history",
+			d: "The full patient file, always one click away."
+		},
+		consult: {
+			t: "Consultations",
+			d: "Structured notes, customizable templates."
+		},
+		prescriptions: {
+			t: "Prescriptions",
+			d: "One-click generation, print-ready PDFs."
+		},
+		treatments: {
+			t: "Treatment tracking",
+			d: "Care plans, steps, reminders."
+		},
+		payments: {
+			t: "Payments",
+			d: "Invoicing, collections, automatic receipts."
+		},
+		unpaid: {
+			t: "Unpaid tracking",
+			d: "Alerts, follow-ups, clear per-patient view."
+		},
+		secretaries: {
+			t: "Secretary management",
+			d: "Roles, permissions, secure access."
+		},
+		doctors: {
+			t: "Doctor management",
+			d: "Multiple practitioners, separate agendas."
+		},
+		dashboard: {
+			t: "Dashboard",
+			d: "Real-time view of your activity."
+		},
+		stats: {
+			t: "Analytics",
+			d: "Clear charts, key metrics."
+		},
+		search: {
+			t: "Fast search",
+			d: "Find a patient in 2 seconds."
+		},
+		pdf: {
+			t: "PDF export",
+			d: "Prescriptions, invoices, records — all exportable."
+		},
+		backups: {
+			t: "Automatic backups",
+			d: "Your data protected, every single day."
+		},
+		security: {
+			t: "Secure sign-in",
+			d: "Encryption, 2FA, GDPR compliant."
+		},
+		darkmode: {
+			t: "Dark mode",
+			d: "Visual comfort, day and night."
+		},
+		audit: {
+			t: "Full audit log",
+			d: "Per-user activity history."
+		},
+		notifications: {
+			t: "Notifications",
+			d: "Real-time alerts, never miss a thing."
+		},
+		emails: {
+			t: "Automatic emails",
+			d: "Confirmations, reminders, campaigns."
+		},
+		sms: {
+			t: "SMS ready",
+			d: "SMS integration available on request."
+		}
+	},
+	ar: {
+		patients: {
+			t: "إدارة المرضى",
+			d: "ملفات مفصلة، بحث فوري، سجل كامل."
+		},
+		booking: {
+			t: "حجز المواعيد",
+			d: "حجز عبر الإنترنت، تذكيرات تلقائية، بدون تعقيد."
+		},
+		calendar: {
+			t: "أجندة ذكية",
+			d: "عرض يومي، أسبوعي، شهري. متعدد الأطباء."
+		},
+		history: {
+			t: "السجل الطبي",
+			d: "الملف الكامل للمريض بنقرة واحدة."
+		},
+		consult: {
+			t: "الاستشارات",
+			d: "ملاحظات منظمة وقوالب قابلة للتخصيص."
+		},
+		prescriptions: {
+			t: "الوصفات الطبية",
+			d: "إنشاء بنقرة واحدة، PDF جاهز للطباعة."
+		},
+		treatments: {
+			t: "متابعة العلاج",
+			d: "خطط علاج، مراحل، تذكيرات."
+		},
+		payments: {
+			t: "المدفوعات",
+			d: "فوترة، تحصيلات، إيصالات آلية."
+		},
+		unpaid: {
+			t: "متابعة غير المسدد",
+			d: "تنبيهات، متابعات، لوحة واضحة لكل مريض."
+		},
+		secretaries: {
+			t: "إدارة السكرتارية",
+			d: "أدوار وصلاحيات ووصول آمن."
+		},
+		doctors: {
+			t: "إدارة الأطباء",
+			d: "عدة أطباء، أجندات منفصلة."
+		},
+		dashboard: {
+			t: "لوحة القيادة",
+			d: "رؤية آنية لنشاطك."
+		},
+		stats: {
+			t: "الإحصائيات",
+			d: "رسوم بيانية واضحة ومؤشرات رئيسية."
+		},
+		search: {
+			t: "بحث سريع",
+			d: "ابحث عن مريض في ثانيتين."
+		},
+		pdf: {
+			t: "تصدير PDF",
+			d: "وصفات، فواتير، ملفات قابلة للتصدير."
+		},
+		backups: {
+			t: "نسخ احتياطي آلي",
+			d: "بياناتك محمية كل يوم."
+		},
+		security: {
+			t: "اتصال آمن",
+			d: "تشفير، مصادقة ثنائية، RGPD."
+		},
+		darkmode: {
+			t: "الوضع الداكن",
+			d: "راحة بصرية ليلًا ونهارًا."
+		},
+		audit: {
+			t: "سجل كامل",
+			d: "سجل نشاط لكل مستخدم."
+		},
+		notifications: {
+			t: "الإشعارات",
+			d: "تنبيهات آنية، بدون نسيان."
+		},
+		emails: {
+			t: "رسائل تلقائية",
+			d: "تأكيدات، تذكيرات، حملات."
+		},
+		sms: {
+			t: "جاهز للـ SMS",
+			d: "تكامل SMS متاح عند الطلب."
+		}
+	}
+};
+var WHY_KEYS = [
+	"time",
+	"noshows",
+	"org",
+	"history",
+	"secure",
+	"ux"
+];
+var WHY_I18N = {
+	fr: {
+		time: {
+			t: "Gain de temps",
+			d: "Automatisez les tâches répétitives et concentrez-vous sur vos patients."
+		},
+		noshows: {
+			t: "Moins de rendez-vous manqués",
+			d: "Rappels automatiques par email et bientôt par SMS."
+		},
+		org: {
+			t: "Organisation simplifiée",
+			d: "Un seul outil pour votre agenda, vos dossiers et votre facturation."
+		},
+		history: {
+			t: "Historique complet",
+			d: "Retrouvez tout l'historique d'un patient en un clic."
+		},
+		secure: {
+			t: "Données sécurisées",
+			d: "Chiffrement de bout en bout, sauvegardes quotidiennes."
+		},
+		ux: {
+			t: "Interface intuitive",
+			d: "Prise en main immédiate, sans formation."
+		}
+	},
+	en: {
+		time: {
+			t: "Save time",
+			d: "Automate repetitive tasks and focus on your patients."
+		},
+		noshows: {
+			t: "Fewer no-shows",
+			d: "Automatic email reminders — SMS coming soon."
+		},
+		org: {
+			t: "Simple organization",
+			d: "One tool for calendar, records and billing."
+		},
+		history: {
+			t: "Full history",
+			d: "Retrieve any patient history in a single click."
+		},
+		secure: {
+			t: "Secure data",
+			d: "End-to-end encryption, daily backups."
+		},
+		ux: {
+			t: "Intuitive UI",
+			d: "Immediate onboarding, no training needed."
+		}
+	},
+	ar: {
+		time: {
+			t: "توفير الوقت",
+			d: "أتمتة المهام المتكررة والتركيز على مرضاك."
+		},
+		noshows: {
+			t: "مواعيد فائتة أقل",
+			d: "تذكيرات آلية بالبريد وقريبًا بالـ SMS."
+		},
+		org: {
+			t: "تنظيم مبسّط",
+			d: "أداة واحدة للأجندة والملفات والفوترة."
+		},
+		history: {
+			t: "سجل كامل",
+			d: "استرجع سجل أي مريض بنقرة واحدة."
+		},
+		secure: {
+			t: "بيانات آمنة",
+			d: "تشفير كامل ونسخ احتياطي يومي."
+		},
+		ux: {
+			t: "واجهة بديهية",
+			d: "استخدام فوري بدون تدريب."
+		}
+	}
+};
+var WORKFLOW_I18N = {
+	fr: [
+		"Patient",
+		"Rendez-vous",
+		"Accueil",
+		"Consultation",
+		"Ordonnance",
+		"Paiement",
+		"Historique sauvegardé"
+	],
+	en: [
+		"Patient",
+		"Appointment",
+		"Check-in",
+		"Consultation",
+		"Prescription",
+		"Payment",
+		"Archived record"
+	],
+	ar: [
+		"المريض",
+		"الموعد",
+		"الاستقبال",
+		"الاستشارة",
+		"الوصفة",
+		"الدفع",
+		"الأرشفة"
+	]
+};
+var PRICING_FEATURES = {
+	fr: {
+		starter: [
+			"1 praticien",
+			"Rendez-vous illimités",
+			"Dossiers patients",
+			"Ordonnances PDF",
+			"Support email"
+		],
+		pro: [
+			"Jusqu'à 5 praticiens",
+			"Agenda multi-utilisateurs",
+			"Statistiques avancées",
+			"Paiements & facturation",
+			"Support prioritaire",
+			"Sauvegardes quotidiennes"
+		],
+		enterprise: [
+			"Praticiens illimités",
+			"Multi-sites",
+			"SLA garanti",
+			"Onboarding dédié",
+			"Intégrations sur mesure",
+			"Chargé de compte"
+		]
+	},
+	en: {
+		starter: [
+			"1 practitioner",
+			"Unlimited appointments",
+			"Patient records",
+			"PDF prescriptions",
+			"Email support"
+		],
+		pro: [
+			"Up to 5 practitioners",
+			"Multi-user calendar",
+			"Advanced analytics",
+			"Payments & invoicing",
+			"Priority support",
+			"Daily backups"
+		],
+		enterprise: [
+			"Unlimited practitioners",
+			"Multi-site",
+			"Guaranteed SLA",
+			"Dedicated onboarding",
+			"Custom integrations",
+			"Account manager"
+		]
+	},
+	ar: {
+		starter: [
+			"طبيب واحد",
+			"مواعيد غير محدودة",
+			"ملفات المرضى",
+			"وصفات PDF",
+			"دعم بالبريد"
+		],
+		pro: [
+			"حتى 5 أطباء",
+			"أجندة متعددة",
+			"إحصائيات متقدمة",
+			"المدفوعات والفوترة",
+			"دعم أولوية",
+			"نسخ يومية"
+		],
+		enterprise: [
+			"أطباء غير محدودين",
+			"متعدد المواقع",
+			"SLA مضمون",
+			"تهيئة مخصصة",
+			"تكاملات خاصة",
+			"مدير حساب"
+		]
+	}
+};
+var TESTIMONIALS_I18N = {
+	fr: [
+		{
+			name: "Dr. Amine Berrada",
+			role: "Médecin généraliste, Casablanca",
+			quote: "DigiCab a divisé par deux le temps passé sur l'administratif. Mes patients adorent les rappels automatiques."
+		},
+		{
+			name: "Dr. Salma El Amrani",
+			role: "Dentiste, Rabat",
+			quote: "L'interface est d'une clarté rare. Toute mon équipe a été autonome en une journée."
+		},
+		{
+			name: "Karim Ouali",
+			role: "Directeur de clinique, Marrakech",
+			quote: "Enfin un logiciel médical qui ressemble à un produit premium. Le support est irréprochable."
+		}
+	],
+	en: [
+		{
+			name: "Dr. Amine Berrada",
+			role: "GP, Casablanca",
+			quote: "DigiCab cut my admin time in half. Patients love the automatic reminders."
+		},
+		{
+			name: "Dr. Salma El Amrani",
+			role: "Dentist, Rabat",
+			quote: "The interface is remarkably clear. My whole team was autonomous in a day."
+		},
+		{
+			name: "Karim Ouali",
+			role: "Clinic Director, Marrakech",
+			quote: "Finally a medical software that feels like a premium product. Support is flawless."
+		}
+	],
+	ar: [
+		{
+			name: "د. أمين برادة",
+			role: "طبيب عام، الدار البيضاء",
+			quote: "قلّص DigiCab وقت الإدارة إلى النصف. مرضاي يحبون التذكيرات الآلية."
+		},
+		{
+			name: "د. سلمى العمراني",
+			role: "طبيبة أسنان، الرباط",
+			quote: "الواجهة واضحة بشكل نادر. أصبح فريقي مستقلًا في يوم واحد."
+		},
+		{
+			name: "كريم أوالي",
+			role: "مدير عيادة، مراكش",
+			quote: "أخيرًا برنامج طبي بمستوى منتج راقٍ. الدعم لا تشوبه شائبة."
+		}
+	]
+};
+var FAQ_I18N = {
+	fr: [
+		{
+			q: "Combien de temps dure la mise en place ?",
+			a: "En moyenne 24 à 48h. Notre équipe vous accompagne à chaque étape."
+		},
+		{
+			q: "Mes données sont-elles hébergées en sécurité ?",
+			a: "Oui. Hébergement chiffré, conformité RGPD et sauvegardes quotidiennes."
+		},
+		{
+			q: "Puis-je essayer avant de m'engager ?",
+			a: "Absolument. Un essai gratuit est disponible, sans carte bancaire."
+		},
+		{
+			q: "Puis-je migrer mes données existantes ?",
+			a: "Oui, notre équipe s'occupe de la migration depuis votre outil actuel."
+		},
+		{
+			q: "Y a-t-il une application mobile ?",
+			a: "L'application web est responsive et fonctionne parfaitement sur mobile."
+		},
+		{
+			q: "Le support est-il inclus ?",
+			a: "Oui, un support humain est inclus dans tous les plans."
+		}
+	],
+	en: [
+		{
+			q: "How long does setup take?",
+			a: "On average 24 to 48 hours. Our team supports you every step of the way."
+		},
+		{
+			q: "Is my data hosted securely?",
+			a: "Yes. Encrypted hosting, GDPR compliance and daily backups."
+		},
+		{
+			q: "Can I try before committing?",
+			a: "Absolutely. A free trial is available, no credit card required."
+		},
+		{
+			q: "Can I migrate my existing data?",
+			a: "Yes, our team handles migration from your current tool."
+		},
+		{
+			q: "Is there a mobile app?",
+			a: "The web app is fully responsive and works perfectly on mobile."
+		},
+		{
+			q: "Is support included?",
+			a: "Yes, human support is included in every plan."
+		}
+	],
+	ar: [
+		{
+			q: "كم يستغرق الإعداد؟",
+			a: "في المتوسط 24 إلى 48 ساعة. فريقنا يرافقك في كل خطوة."
+		},
+		{
+			q: "هل بياناتي مستضافة بأمان؟",
+			a: "نعم. استضافة مشفرة ومتوافقة مع RGPD ونسخ احتياطية يومية."
+		},
+		{
+			q: "هل يمكنني التجربة قبل الاشتراك؟",
+			a: "بالتأكيد. نسخة تجريبية مجانية متاحة دون بطاقة بنكية."
+		},
+		{
+			q: "هل يمكنني ترحيل بياناتي؟",
+			a: "نعم، فريقنا يتكفل بالترحيل من أداتك الحالية."
+		},
+		{
+			q: "هل يوجد تطبيق للهاتف؟",
+			a: "التطبيق متجاوب ويعمل بشكل ممتاز على الهاتف."
+		},
+		{
+			q: "هل الدعم مشمول؟",
+			a: "نعم، دعم بشري مشمول في جميع الخطط."
+		}
+	]
+};
+var I18nContext = (0, import_react.createContext)(null);
+function I18nProvider({ children }) {
+	const [locale, setLocaleState] = (0, import_react.useState)("fr");
+	(0, import_react.useEffect)(() => {
+		const stored = typeof window !== "undefined" ? localStorage.getItem("cf-locale") : null;
+		if (stored && LOCALES.some((l) => l.code === stored)) setLocaleState(stored);
+	}, []);
+	const dir = (0, import_react.useMemo)(() => LOCALES.find((l) => l.code === locale)?.dir ?? "ltr", [locale]);
+	(0, import_react.useEffect)(() => {
+		if (typeof document === "undefined") return;
+		document.documentElement.setAttribute("lang", locale);
+		document.documentElement.setAttribute("dir", dir);
+	}, [locale, dir]);
+	const setLocale = (l) => {
+		setLocaleState(l);
+		try {
+			localStorage.setItem("cf-locale", l);
+		} catch {}
+	};
+	const t = (0, import_react.useMemo)(() => {
+		const dict = translations[locale];
+		return (key) => dict[key] ?? translations.fr[key] ?? key;
+	}, [locale]);
+	const value = (0, import_react.useMemo)(() => ({
+		locale,
+		setLocale,
+		t,
+		dir
+	}), [
+		locale,
+		t,
+		dir
+	]);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(I18nContext.Provider, {
+		value,
+		children
+	});
+}
+function useI18n() {
+	const ctx = (0, import_react.useContext)(I18nContext);
+	if (!ctx) throw new Error("useI18n must be used within I18nProvider");
+	return ctx;
+}
+function useT() {
+	return useI18n().t;
+}
+var ThemeCtx = (0, import_react.createContext)({
+	theme: "light",
+	toggle: () => {}
+});
+function ThemeProvider({ children }) {
+	const [theme, setTheme] = (0, import_react.useState)("light");
+	(0, import_react.useEffect)(() => {
+		const stored = localStorage.getItem("cf-theme");
+		const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)").matches;
+		setTheme(stored ?? (prefersDark ? "dark" : "light"));
+	}, []);
+	(0, import_react.useEffect)(() => {
+		document.documentElement.classList.toggle("dark", theme === "dark");
+		try {
+			localStorage.setItem("cf-theme", theme);
+		} catch {}
+	}, [theme]);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ThemeCtx.Provider, {
+		value: {
+			theme,
+			toggle: () => setTheme((t) => t === "dark" ? "light" : "dark")
+		},
+		children
+	});
+}
+var useTheme = () => (0, import_react.useContext)(ThemeCtx);
+var Ctx = (0, import_react.createContext)({
+	open: false,
+	setOpen: () => {}
+});
+function TrialModalProvider({ children }) {
+	const [open, setOpen] = (0, import_react.useState)(false);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Ctx.Provider, {
+		value: {
+			open,
+			setOpen
+		},
+		children
+	});
+}
+var useTrialModal = () => (0, import_react.useContext)(Ctx);
+function cn(...inputs) {
+	return twMerge(clsx(inputs));
+}
+var buttonVariants = cva("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0", {
+	variants: {
+		variant: {
+			default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
+			destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
+			outline: "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
+			secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+			ghost: "hover:bg-accent hover:text-accent-foreground",
+			link: "text-primary underline-offset-4 hover:underline"
+		},
+		size: {
+			default: "h-9 px-4 py-2",
+			sm: "h-8 rounded-md px-3 text-xs",
+			lg: "h-10 rounded-md px-8",
+			icon: "h-9 w-9"
+		}
+	},
+	defaultVariants: {
+		variant: "default",
+		size: "default"
+	}
+});
+var Button = import_react.forwardRef(({ className, variant, size, asChild = false, ...props }, ref) => {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(asChild ? Slot : "button", {
+		className: cn(buttonVariants({
+			variant,
+			size,
+			className
+		})),
+		ref,
+		...props
+	});
+});
+Button.displayName = "Button";
+var Input = import_react.forwardRef(({ className, type, ...props }, ref) => {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+		type,
+		className: cn("flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm", className),
+		ref,
+		...props
+	});
+});
+Input.displayName = "Input";
+var labelVariants = cva("text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70");
+var Label = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root, {
+	ref,
+	className: cn(labelVariants(), className),
+	...props
+}));
+Label.displayName = Root.displayName;
+var Textarea = import_react.forwardRef(({ className, ...props }, ref) => {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("textarea", {
+		className: cn("flex min-h-[60px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-base shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm", className),
+		ref,
+		...props
+	});
+});
+Textarea.displayName = "Textarea";
+//#endregion
+export { cn as _, I18nProvider as a, useTheme as b, Label as c, Textarea as d, ThemeProvider as f, WORKFLOW_I18N as g, WHY_KEYS as h, FEATURES_KEYS as i, PRICING_FEATURES as l, WHY_I18N as m, FAQ_I18N as n, Input as o, TrialModalProvider as p, FEATURES_I18N as r, LOCALES as s, Button as t, TESTIMONIALS_I18N as u, useI18n as v, useTrialModal as x, useT as y };
