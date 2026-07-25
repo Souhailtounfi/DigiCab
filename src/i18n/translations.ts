@@ -23,7 +23,7 @@ export const translations: Record<Locale, Dict> = {
     "cta.contact": "Nous contacter",
 
     "hero.badge": "Conforme RGPD · Hébergement Maroc",
-    "hero.title": "La gestion de votre cabinet médical, enfin simple.",
+    "hero.title": "DigiCab, la gestion de votre cabinet médical enfin simple.",
     "hero.subtitle": "DigiCab centralise vos patients, rendez-vous, consultations, ordonnances, paiements, historique médical, personnel et statistiques — dans une plateforme moderne, rapide et sécurisée.",
     "hero.stat1": "cabinets équipés",
     "hero.stat2": "rendez-vous par mois",
@@ -121,7 +121,7 @@ export const translations: Record<Locale, Dict> = {
     "cta.contact": "Contact us",
 
     "hero.badge": "GDPR compliant · Hosted in Morocco",
-    "hero.title": "Medical practice management, finally simple.",
+    "hero.title": "DigiCab, medical practice management finally simple.",
     "hero.subtitle": "DigiCab centralizes your patients, appointments, consultations, prescriptions, payments, medical history, staff and analytics — in a modern, fast and secure platform.",
     "hero.stat1": "clinics equipped",
     "hero.stat2": "appointments per month",
@@ -219,7 +219,7 @@ export const translations: Record<Locale, Dict> = {
     "cta.contact": "تواصل معنا",
 
     "hero.badge": "متوافق مع RGPD · مستضاف في المغرب",
-    "hero.title": "إدارة عيادتك الطبية، أصبحت أخيرًا بسيطة.",
+    "hero.title": "DigiCab، إدارة عيادتك الطبية أصبحت أخيرًا بسيطة.",
     "hero.subtitle": "يجمع DigiCab مرضاك، مواعيدك، استشاراتك، وصفاتك، مدفوعاتك، سجلاتك الطبية، فريقك وإحصائياتك في منصة حديثة وسريعة وآمنة.",
     "hero.stat1": "عيادة مجهزة",
     "hero.stat2": "موعد شهريًا",
