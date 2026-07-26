@@ -1,39 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://CliniCab.ma/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <loc>https://clini-cab.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://CliniCab.ma/#features</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://CliniCab.ma/#why</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://CliniCab.ma/#pricing</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://CliniCab.ma/#faq</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://CliniCab.ma/#contact</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>

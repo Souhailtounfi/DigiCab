@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://CliniCab.ma/sitemap.xml
-Sitemap: https://CliniCab.vercel.app/sitemap.xml
+Sitemap: https://clini-cab.vercel.app/sitemap.xml
