@@ -13,7 +13,7 @@ export function Logo({ className = "" }: { className?: string }) {
         />
       </div>
       <span className="text-xl font-bold tracking-tight text-foreground">
-        Digi<span className="text-gradient">Cab</span>
+        Clini<span className="text-gradient">Cab</span>
       </span>
     </div>
   );
