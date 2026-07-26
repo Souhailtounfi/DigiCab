@@ -4,7 +4,7 @@ export function Logo({ className = "" }: { className?: string }) {
       <div className="relative flex size-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 p-1 shadow-sm border border-primary/20 dark:border-primary/40 overflow-hidden">
         <img
           src="/logo.png"
-          alt="DigiCab Logo"
+          alt="CliniCab Logo"
           className="size-full object-cover rounded-lg"
           onError={(e) => {
             // fallback to favicon if logo fails to load

@@ -2,7 +2,7 @@ import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function WhatsAppFloat() {
-  const href = `https://wa.me/212639286401?text=${encodeURIComponent("Bonjour DigiCab")}`;
+  const href = `https://wa.me/212639286401?text=${encodeURIComponent("Bonjour CliniCab")}`;
   return (
     <motion.a
       href={href}

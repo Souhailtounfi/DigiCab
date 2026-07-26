@@ -9,7 +9,7 @@ import { useT } from "@/i18n/context";
 import { useTrialModal } from "./TrialModalContext";
 
 const WHATSAPP = "212639286401";
-const EMAIL_TO = "contact@digicab.ma";
+const EMAIL_TO = "contact@CliniCab.ma";
 
 export function TrialModal() {
   const t = useT();
@@ -28,11 +28,11 @@ export function TrialModal() {
       `Prénom: ${f.firstName}\nNom: ${f.lastName}\nCabinet: ${f.clinic}\nSpécialité: ${f.specialty}\n` +
       `Téléphone: ${f.phone}\nEmail: ${f.email}\nVille: ${f.city}\nPraticiens: ${f.practitioners}\n\n${f.message}`
     );
-    window.location.href = `mailto:${EMAIL_TO}?subject=${encodeURIComponent("Essai gratuit — DigiCab")}&body=${body}`;
+    window.location.href = `mailto:${EMAIL_TO}?subject=${encodeURIComponent("Essai gratuit — CliniCab")}&body=${body}`;
   };
 
   const wa = () => {
-    const msg = encodeURIComponent("Bonjour DigiCab, je souhaite démarrer un essai gratuit.");
+    const msg = encodeURIComponent("Bonjour CliniCab, je souhaite démarrer un essai gratuit.");
     window.open(`https://wa.me/${WHATSAPP}?text=${msg}`, "_blank");
   };
 

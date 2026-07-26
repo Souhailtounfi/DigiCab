@@ -17,30 +17,30 @@ export function Contact() {
     const body = encodeURIComponent(
       `Nom: ${f.name}\nCabinet: ${f.clinic}\nTéléphone: ${f.phone}\nEmail: ${f.email}\n\n${f.message}`
     );
-    window.location.href = `mailto:contact@digicab.ma?subject=${encodeURIComponent("Contact — DigiCab")}&body=${body}`;
+    window.location.href = `mailto:contact@CliniCab.ma?subject=${encodeURIComponent("Contact — CliniCab")}&body=${body}`;
   };
 
   return (
     <Section id="contact">
       <SectionHeader eyebrow={t("contact.eyebrow")} title={t("contact.title")} subtitle={t("contact.subtitle")} />
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
-      <Reveal direction="left"
+        <Reveal direction="left"
           className="lg:col-span-3"
         >
           <form
             onSubmit={submit}
             className="rounded-3xl border border-border bg-card p-6 md:p-8 shadow-soft space-y-4"
           >
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Field label={t("form.lastName")} value={f.name} onChange={upd("name")} required />
-            <Field label={t("form.clinic")} value={f.clinic} onChange={upd("clinic")} />
-            <Field label={t("form.phone")} value={f.phone} onChange={upd("phone")} type="tel" />
-            <Field label={t("form.email")} value={f.email} onChange={upd("email")} type="email" required />
-          </div>
-          <div className="space-y-2">
-            <Label>{t("form.message")}</Label>
-            <Textarea rows={5} value={f.message} onChange={upd("message")} required />
-          </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Field label={t("form.lastName")} value={f.name} onChange={upd("name")} required />
+              <Field label={t("form.clinic")} value={f.clinic} onChange={upd("clinic")} />
+              <Field label={t("form.phone")} value={f.phone} onChange={upd("phone")} type="tel" />
+              <Field label={t("form.email")} value={f.email} onChange={upd("email")} type="email" required />
+            </div>
+            <div className="space-y-2">
+              <Label>{t("form.message")}</Label>
+              <Textarea rows={5} value={f.message} onChange={upd("message")} required />
+            </div>
             <Button type="submit" className="w-full sm:w-auto bg-gradient-primary text-primary-foreground h-11 px-8">
               {t("contact.send")}
             </Button>
@@ -50,7 +50,7 @@ export function Contact() {
         <Reveal direction="right" delay={0.1} className="lg:col-span-2 space-y-4">
           <ContactCard icon={<MessageCircle className="size-5" />} label="WhatsApp" value="+212 6 39 28 64 01" href="https://wa.me/212639286401" />
           <ContactCard icon={<Phone className="size-5" />} label={t("form.phone")} value="+212 6 39 28 64 01" href="tel:+212639286401" />
-          <ContactCard icon={<Mail className="size-5" />} label={t("form.email")} value="contact@digicab.ma" href="mailto:contact@digicab.ma" />
+          <ContactCard icon={<Mail className="size-5" />} label={t("form.email")} value="contact@CliniCab.ma" href="mailto:contact@CliniCab.ma" />
           <ContactCard icon={<MapPin className="size-5" />} label="Adresse" value={t("contact.address")} />
           <ContactCard icon={<Clock className="size-5" />} label="Horaires" value={t("contact.hours")} />
 

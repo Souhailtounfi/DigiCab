@@ -77,7 +77,7 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">© {year} DigiCab. {t("footer.rights")}</p>
+          <p className="text-xs text-muted-foreground">© {year} CliniCab. {t("footer.rights")}</p>
           <LanguageSwitcher />
         </div>
       </div>

@@ -8,7 +8,7 @@ import { DashboardMockup } from "./DashboardMockup";
 export function Hero() {
   const t = useT();
   const { setOpen } = useTrialModal();
-  const wa = () => window.open(`https://wa.me/212639286401?text=${encodeURIComponent("Bonjour DigiCab")}`, "_blank");
+  const wa = () => window.open(`https://wa.me/212639286401?text=${encodeURIComponent("Bonjour CliniCab")}`, "_blank");
 
   return (
     <section id="home" className="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden">

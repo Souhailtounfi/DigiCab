@@ -23,8 +23,8 @@ export const translations: Record<Locale, Dict> = {
     "cta.contact": "Nous contacter",
 
     "hero.badge": "Conforme RGPD · Hébergement Maroc",
-    "hero.title": "DigiCab, la gestion de votre cabinet médical enfin simple.",
-    "hero.subtitle": "DigiCab centralise vos patients, rendez-vous, consultations, ordonnances, paiements, historique médical, personnel et statistiques — dans une plateforme moderne, rapide et sécurisée.",
+    "hero.title": "CliniCab, la gestion de votre cabinet médical enfin simple.",
+    "hero.subtitle": "CliniCab centralise vos patients, rendez-vous, consultations, ordonnances, paiements, historique médical, personnel et statistiques — dans une plateforme moderne, rapide et sécurisée.",
     "hero.stat1": "cabinets équipés",
     "hero.stat2": "rendez-vous par mois",
     "hero.stat3": "de disponibilité",
@@ -36,7 +36,7 @@ export const translations: Record<Locale, Dict> = {
     "features.title": "Tout ce dont votre cabinet a besoin, au même endroit.",
     "features.subtitle": "Une suite complète pensée pour les professionnels de santé exigeants.",
 
-    "why.eyebrow": "Pourquoi DigiCab",
+    "why.eyebrow": "Pourquoi CliniCab",
     "why.title": "Une plateforme qui change le quotidien de votre équipe.",
 
     "workflow.eyebrow": "Workflow",
@@ -60,7 +60,7 @@ export const translations: Record<Locale, Dict> = {
     "screens.title": "Une expérience pensée dans le moindre détail.",
 
     "testimonials.eyebrow": "Témoignages",
-    "testimonials.title": "Ils ont transformé leur pratique avec DigiCab.",
+    "testimonials.title": "Ils ont transformé leur pratique avec CliniCab.",
 
     "faq.eyebrow": "FAQ",
     "faq.title": "Vos questions, nos réponses.",
@@ -121,8 +121,8 @@ export const translations: Record<Locale, Dict> = {
     "cta.contact": "Contact us",
 
     "hero.badge": "GDPR compliant · Hosted in Morocco",
-    "hero.title": "DigiCab, medical practice management finally simple.",
-    "hero.subtitle": "DigiCab centralizes your patients, appointments, consultations, prescriptions, payments, medical history, staff and analytics — in a modern, fast and secure platform.",
+    "hero.title": "CliniCab, medical practice management finally simple.",
+    "hero.subtitle": "CliniCab centralizes your patients, appointments, consultations, prescriptions, payments, medical history, staff and analytics — in a modern, fast and secure platform.",
     "hero.stat1": "clinics equipped",
     "hero.stat2": "appointments per month",
     "hero.stat3": "uptime",
@@ -134,7 +134,7 @@ export const translations: Record<Locale, Dict> = {
     "features.title": "Everything your practice needs, in one place.",
     "features.subtitle": "A complete suite built for demanding healthcare professionals.",
 
-    "why.eyebrow": "Why DigiCab",
+    "why.eyebrow": "Why CliniCab",
     "why.title": "A platform that changes your team's daily life.",
 
     "workflow.eyebrow": "Workflow",
@@ -158,7 +158,7 @@ export const translations: Record<Locale, Dict> = {
     "screens.title": "An experience crafted down to the smallest detail.",
 
     "testimonials.eyebrow": "Testimonials",
-    "testimonials.title": "They transformed their practice with DigiCab.",
+    "testimonials.title": "They transformed their practice with CliniCab.",
 
     "faq.eyebrow": "FAQ",
     "faq.title": "Your questions, our answers.",
@@ -219,8 +219,8 @@ export const translations: Record<Locale, Dict> = {
     "cta.contact": "تواصل معنا",
 
     "hero.badge": "متوافق مع RGPD · مستضاف في المغرب",
-    "hero.title": "DigiCab، إدارة عيادتك الطبية أصبحت أخيرًا بسيطة.",
-    "hero.subtitle": "يجمع DigiCab مرضاك، مواعيدك، استشاراتك، وصفاتك، مدفوعاتك، سجلاتك الطبية، فريقك وإحصائياتك في منصة حديثة وسريعة وآمنة.",
+    "hero.title": "CliniCab، إدارة عيادتك الطبية أصبحت أخيرًا بسيطة.",
+    "hero.subtitle": "يجمع CliniCab مرضاك، مواعيدك، استشاراتك، وصفاتك، مدفوعاتك، سجلاتك الطبية، فريقك وإحصائياتك في منصة حديثة وسريعة وآمنة.",
     "hero.stat1": "عيادة مجهزة",
     "hero.stat2": "موعد شهريًا",
     "hero.stat3": "من الجاهزية",
@@ -232,7 +232,7 @@ export const translations: Record<Locale, Dict> = {
     "features.title": "كل ما تحتاجه عيادتك، في مكان واحد.",
     "features.subtitle": "مجموعة متكاملة مصممة لمحترفي الصحة المتطلبين.",
 
-    "why.eyebrow": "لماذا DigiCab",
+    "why.eyebrow": "لماذا CliniCab",
     "why.title": "منصة تُغيّر يوميات فريقك.",
 
     "workflow.eyebrow": "المسار",
@@ -256,7 +256,7 @@ export const translations: Record<Locale, Dict> = {
     "screens.title": "تجربة مصممة بعناية في أدق التفاصيل.",
 
     "testimonials.eyebrow": "الشهادات",
-    "testimonials.title": "لقد غيّروا ممارستهم مع DigiCab.",
+    "testimonials.title": "لقد غيّروا ممارستهم مع CliniCab.",
 
     "faq.eyebrow": "الأسئلة الشائعة",
     "faq.title": "أسئلتكم، إجاباتنا.",
@@ -441,17 +441,17 @@ export const PRICING_FEATURES: Record<Locale, { starter: string[]; pro: string[]
 
 export const TESTIMONIALS_I18N: Record<Locale, { name: string; role: string; quote: string }[]> = {
   fr: [
-    { name: "Dr. Amine Berrada", role: "Médecin généraliste, Casablanca", quote: "DigiCab a divisé par deux le temps passé sur l'administratif. Mes patients adorent les rappels automatiques." },
+    { name: "Dr. Amine Berrada", role: "Médecin généraliste, Casablanca", quote: "CliniCab a divisé par deux le temps passé sur l'administratif. Mes patients adorent les rappels automatiques." },
     { name: "Dr. Salma El Amrani", role: "Dentiste, Rabat", quote: "L'interface est d'une clarté rare. Toute mon équipe a été autonome en une journée." },
     { name: "Karim Ouali", role: "Directeur de clinique, Marrakech", quote: "Enfin un logiciel médical qui ressemble à un produit premium. Le support est irréprochable." },
   ],
   en: [
-    { name: "Dr. Amine Berrada", role: "GP, Casablanca", quote: "DigiCab cut my admin time in half. Patients love the automatic reminders." },
+    { name: "Dr. Amine Berrada", role: "GP, Casablanca", quote: "CliniCab cut my admin time in half. Patients love the automatic reminders." },
     { name: "Dr. Salma El Amrani", role: "Dentist, Rabat", quote: "The interface is remarkably clear. My whole team was autonomous in a day." },
     { name: "Karim Ouali", role: "Clinic Director, Marrakech", quote: "Finally a medical software that feels like a premium product. Support is flawless." },
   ],
   ar: [
-    { name: "د. أمين برادة", role: "طبيب عام، الدار البيضاء", quote: "قلّص DigiCab وقت الإدارة إلى النصف. مرضاي يحبون التذكيرات الآلية." },
+    { name: "د. أمين برادة", role: "طبيب عام، الدار البيضاء", quote: "قلّص CliniCab وقت الإدارة إلى النصف. مرضاي يحبون التذكيرات الآلية." },
     { name: "د. سلمى العمراني", role: "طبيبة أسنان، الرباط", quote: "الواجهة واضحة بشكل نادر. أصبح فريقي مستقلًا في يوم واحد." },
     { name: "كريم أوالي", role: "مدير عيادة، مراكش", quote: "أخيرًا برنامج طبي بمستوى منتج راقٍ. الدعم لا تشوبه شائبة." },
   ],

@@ -81,12 +81,12 @@ const jsonLdSchema = {
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      "name": "DigiCab",
-      "alternateName": "DigiCab Maroc",
+      "name": "CliniCab",
+      "alternateName": "CliniCab Maroc",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "Web, iOS, Android, Windows, macOS",
-      "url": "https://digicab.ma",
-      "description": "DigiCab est la plateforme N°1 au Maroc pour la gestion de cabinets médicaux et dentaires: dossiers patients, agenda intelligent, ordonnances PDF, consultations, facturation et statistiques.",
+      "url": "https://CliniCab.ma",
+      "description": "CliniCab est la plateforme N°1 au Maroc pour la gestion de cabinets médicaux et dentaires: dossiers patients, agenda intelligent, ordonnances PDF, consultations, facturation et statistiques.",
       "offers": {
         "@type": "Offer",
         "price": "500",
@@ -95,9 +95,9 @@ const jsonLdSchema = {
     },
     {
       "@type": "Organization",
-      "name": "DigiCab",
-      "url": "https://digicab.ma",
-      "logo": "https://digicab.ma/logo.png",
+      "name": "CliniCab",
+      "url": "https://CliniCab.ma",
+      "logo": "https://CliniCab.ma/logo.png",
       "sameAs": [],
       "contactPoint": {
         "@type": "ContactPoint",
@@ -115,41 +115,41 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "DigiCab — Logiciel de Gestion de Cabinet Médical au Maroc" },
+      { title: "CliniCab — Logiciel de Gestion de Cabinet Médical au Maroc" },
       {
         name: "description",
         content:
-          "DigiCab est le logiciel N°1 au Maroc pour la gestion intégrée des cabinets médicaux et dentaires: gestion des patients, agenda intelligent, ordonnances PDF, consultations et facturation.",
+          "CliniCab est le logiciel N°1 au Maroc pour la gestion intégrée des cabinets médicaux et dentaires: gestion des patients, agenda intelligent, ordonnances PDF, consultations et facturation.",
       },
       {
         name: "keywords",
         content:
-          "DigiCab, DigiCab Maroc, logiciel cabinet médical Maroc, gestion cabinet dentaire, logiciel médecin Maroc, dossier patient électronique, ordonnance médicale PDF, agenda médical Casablanca, gestion consultation médicale",
+          "CliniCab, CliniCab Maroc, logiciel cabinet médical Maroc, gestion cabinet dentaire, logiciel médecin Maroc, dossier patient électronique, ordonnance médicale PDF, agenda médical Casablanca, gestion consultation médicale",
       },
-      { name: "author", content: "DigiCab" },
+      { name: "author", content: "CliniCab" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
       { name: "theme-color", content: "#4f46e5" },
 
       /* Open Graph / Facebook */
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "DigiCab" },
-      { property: "og:title", content: "DigiCab — Logiciel de Gestion de Cabinet Médical au Maroc" },
+      { property: "og:site_name", content: "CliniCab" },
+      { property: "og:title", content: "CliniCab — Logiciel de Gestion de Cabinet Médical au Maroc" },
       {
         property: "og:description",
         content:
-          "Centralisez vos patients, rendez-vous, consultations, ordonnances et paiements avec DigiCab. Essai gratuit disponible.",
+          "Centralisez vos patients, rendez-vous, consultations, ordonnances et paiements avec CliniCab. Essai gratuit disponible.",
       },
-      { property: "og:image", content: "https://digicab.ma/logo.png" },
+      { property: "og:image", content: "https://CliniCab.ma/logo.png" },
 
       /* Twitter */
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@DigiCab" },
-      { name: "twitter:title", content: "DigiCab — Logiciel de Gestion de Cabinet Médical au Maroc" },
-      { name: "twitter:description", content: "Centralisez vos patients, rendez-vous, consultations et ordonnances avec DigiCab. Essai gratuit disponible." },
-      { name: "twitter:image", content: "https://digicab.ma/logo.png" },
+      { name: "twitter:site", content: "@CliniCab" },
+      { name: "twitter:title", content: "CliniCab — Logiciel de Gestion de Cabinet Médical au Maroc" },
+      { name: "twitter:description", content: "Centralisez vos patients, rendez-vous, consultations et ordonnances avec CliniCab. Essai gratuit disponible." },
+      { name: "twitter:image", content: "https://CliniCab.ma/logo.png" },
     ],
     links: [
-      { rel: "canonical", href: "https://digicab.ma/" },
+      { rel: "canonical", href: "https://CliniCab.ma/" },
       { rel: "icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",

@@ -51,7 +51,7 @@ export function DashboardMockup() {
             <span className="size-2.5 rounded-full bg-yellow-400" />
             <span className="size-2.5 rounded-full bg-green-400" />
           </div>
-          <div className="mx-auto text-[10px] text-muted-foreground font-mono">digicab.ma / dashboard</div>
+          <div className="mx-auto text-[10px] text-muted-foreground font-mono">CliniCab.ma / dashboard</div>
         </div>
         <div className="grid grid-cols-12 gap-3 p-4 bg-background/60" style={{ transform: "translateZ(10px)" }}>
           {/* sidebar */}
