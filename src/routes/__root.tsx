@@ -97,7 +97,7 @@ const jsonLdSchema = {
       "@type": "Organization",
       "name": "CliniCab",
       "url": "https://CliniCab.ma",
-      "logo": "https://CliniCab.ma/logo.png",
+      "logo": "https://CliniCab.ma/logo-v2.png",
       "sameAs": [],
       "contactPoint": {
         "@type": "ContactPoint",
@@ -139,14 +139,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Centralisez vos patients, rendez-vous, consultations, ordonnances et paiements avec CliniCab. Essai gratuit disponible.",
       },
-      { property: "og:image", content: "https://CliniCab.ma/logo.png" },
+      { property: "og:image", content: "https://CliniCab.ma/logo-v2.png" },
 
       /* Twitter */
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@CliniCab" },
       { name: "twitter:title", content: "CliniCab — Logiciel de Gestion de Cabinet Médical au Maroc" },
       { name: "twitter:description", content: "Centralisez vos patients, rendez-vous, consultations et ordonnances avec CliniCab. Essai gratuit disponible." },
-      { name: "twitter:image", content: "https://CliniCab.ma/logo.png" },
+      { name: "twitter:image", content: "https://CliniCab.ma/logo-v2.png" },
     ],
     links: [
       { rel: "canonical", href: "https://CliniCab.ma/" },

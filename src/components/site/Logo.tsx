@@ -3,7 +3,7 @@ export function Logo({ className = "" }: { className?: string }) {
     <div className={`flex items-center gap-2.5 ${className}`}>
       <div className="relative flex size-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 p-1 shadow-sm border border-primary/20 dark:border-primary/40 overflow-hidden">
         <img
-          src="/logo.png"
+          src="/logo-v2.png"
           alt="CliniCab Logo"
           className="size-full object-cover rounded-lg"
           onError={(e) => {
