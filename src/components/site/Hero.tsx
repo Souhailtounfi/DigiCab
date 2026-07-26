@@ -46,10 +46,6 @@ export function Hero() {
             </Button>
           </div>
 
-          <div className="mt-8 flex items-center gap-2 text-xs text-muted-foreground">
-            <ShieldCheck className="size-4 text-accent" />
-            RGPD · ISO 27001 · Hébergement souverain
-          </div>
 
 
         </motion.div>
