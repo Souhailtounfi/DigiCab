@@ -12,7 +12,7 @@ import { useT } from "@/i18n/context";
 const FEATURES = [
   {
     id: "agenda",
-    src: "/img-agenda.png",
+    src: "/img-agenda-v2.webp",
     label: "Agenda intelligent",
     desc: "Planifiez, confirmez et gérez tous vos rendez-vous depuis un seul endroit. Vue jour, semaine ou mois — multi-praticiens, glisser-déposer.",
     Icon: CalendarCheck,
@@ -22,7 +22,7 @@ const FEATURES = [
   },
   {
     id: "patient",
-    src: "/img-patient.png",
+    src: "/img-patient-v2.webp",
     label: "Dossier patient complet",
     desc: "Chaque patient a son propre dossier numérique — consultations, ordonnances, traitements, historique, tout est là, toujours à portée de clic.",
     Icon: UserRound,
@@ -32,7 +32,7 @@ const FEATURES = [
   },
   {
     id: "stats",
-    src: "/img-stats.png",
+    src: "/img-stats-v2.webp",
     label: "Statistiques & revenus",
     desc: "Suivez vos performances en temps réel. Graphiques clairs, indicateurs financiers, taux de présence — tout ce qu'il vous faut pour piloter votre cabinet.",
     Icon: BarChart3,
@@ -42,7 +42,7 @@ const FEATURES = [
   },
   {
     id: "prescription",
-    src: "/img-prescription.png",
+    src: "/img-prescription-v2.webp",
     label: "Ordonnances en un clic",
     desc: "Générez des ordonnances PDF en quelques secondes. Modèles personnalisables, signature numérique, prêt à imprimer ou à envoyer par email.",
     Icon: FileDown,
@@ -102,9 +102,8 @@ function FeaturePanel({ feature, index }: { feature: (typeof FEATURES)[0]; index
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
         <div
-          className={`flex flex-col gap-10 lg:gap-16 items-center ${
-            isRight ? "lg:flex-row" : "lg:flex-row-reverse"
-          }`}
+          className={`flex flex-col gap-10 lg:gap-16 items-center ${isRight ? "lg:flex-row" : "lg:flex-row-reverse"
+            }`}
         >
           {/* ── Image pane ── */}
           <div className="w-full lg:w-1/2 shrink-0">

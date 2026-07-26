@@ -150,7 +150,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "canonical", href: "https://CliniCab.ma/" },
-      { rel: "icon", href: "/favicon.ico" },
+      { rel: "icon", href: "/favicon-v2.ico" },
       {
         rel: "stylesheet",
         href: appCss,

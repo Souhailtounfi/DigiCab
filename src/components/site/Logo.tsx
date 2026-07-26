@@ -8,7 +8,7 @@ export function Logo({ className = "" }: { className?: string }) {
           className="size-full object-cover rounded-lg"
           onError={(e) => {
             // fallback to favicon if logo fails to load
-            (e.target as HTMLImageElement).src = "/favicon.ico";
+            (e.target as HTMLImageElement).src = "/favicon-v2.ico";
           }}
         />
       </div>
